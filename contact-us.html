@@ -22,34 +22,85 @@
 
 </head>
 
-<body>
+<body class= "bg-success">
 
-<p>&nbsp;</p>
-
-<div class="fit">
+    <div class = "container">
+        <div class = "row">
+            <!-- col-sm-3 col-md-4-->
+             <div class = "col-lg-7">
     
-    <h1>Contact Form:</h1>
+                 <h1> Contact us:</h1>
     
-    <h2>Name*</h2>
-    <p>First: __________      Last: __________     </p>
-
-    <h2>Epost*</h2>
-    <p>_________________________</p>
-
-    <h2>comment or Messsage:</h2>
-    <div>
-        <p>Here you can write the comment/message: E.g. Kan dere også måle blodsukker? Hilsen Cat Boba</p>
-    </div>
-
-
-</body>
-    <footer>
-        <div class="submit">
-        <p>Submit</p>
+                 <form class = "form-group">
+    
+     <!-- For style av tabellen under antall billetter-->
+    
+    
+    <table style = "background-color: whitesmoke">
+    
+    
+        <!--Skrive inn telefonnr-->
+        <div class="form-group">
+        <tr> <td> <label for="phoneNumber">Telefonnummer:</label></td>
+            <td><input type = "tel" class="form-group" id="phoneNumber" /></td>
+            <td><label id="feilmeldingphoneNumber" class="text-danger"></label> </td>
+        </tr>
         </div>
-        <p>Are you sure you want to submit?</p>
-        </footer>
+    
+        <!--Skrive inn email-->
+        <div class="form-group">
+        <tr> <td> <label for="email">Epost:</label>  </td>
+            <td> <input type="email" class="form-group" id="email" /> </td>
+            <td> <label id="feilmeldingemail" class="text-danger"> </label> </td>
+        </tr>
+        </div>
+    
+        <!--Skrive inn tilbakemelding-->
+        <div class="form-group">
+            <tr> <td> <label for="tilbakemelding">Tilbakemelding:</label>  </td>
+                <td> <input type="text" class="form-group" id="tilbakemelding" /> </td>
+                <td> <label id="feilmeldingtilbakemelding" class="text-danger"> </label> </td>
+            </tr>
+        </div>
+    
+    
+    </table>
+    
+    
+    
+    
+    <!--Ekstra: En avkrysningsboks for å akseptere vilkaar og beingelser for kjop av billetter-->
+                     <div style = "background-color: whitesmoke">
+    <input type="checkbox" id="terms"/>
+    <label for="terms">Jeg onsker aa sende tilbakemelding til Wellcare Monitors</label>
+    <label id="feilmeldingterms" class="text-danger"> </label>
+                     </div>
+                     <!-- style = "color: red"-->
+    
+     <br>
+                 </form>
+    
+     <!--Knapp for å registrere kjøp-->
+    <button class="btn btn-primary" onclick="sendMelding()">Send melding til Wellcare Monitors</button><br/>
+                 <div>
+                 <label id="tilbakemeldingSendt"  class="text-dark"></label>
+                 </div>
+    
+            </div>
+            <!--col-sm-9 col-md-8-->
+            <div class=" col-lg-5">
+                 <h2>Meldingen du sendte: </h2>
+                <div id="orderList"></div>
+                <button class="btn btn-danger" onclick="slettalle()">Angre en melding</button>
+            </div>
+        </div>
+    </div>
+    
 
+    
+    <script src="JavaScriptoblig2.js"></script>
+    </body>
+    
 
 <!--All block elements must be closed!-->
 
