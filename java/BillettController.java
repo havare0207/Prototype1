@@ -33,7 +33,7 @@ public class BillettController {
     @PostMapping("/slett")
     public String slettBillett(){
         List.clear();
-        return "Billettene har blitt slettet!";
+        return "Tilbakemeldingene har blitt slettet!";
 
     }
 }
