@@ -4,8 +4,14 @@
 .nav{
     background-color: #caf1b8;
     border: 2px solid #000000;
-    margin: 20px;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+}
+
+body{
+    background-image: url("../image/bakgrunnsbilde.webp");
+    background-size: cover;
 }
 
 
@@ -45,17 +51,25 @@ div{
     text-align:center;
 }
 
+.employees{
+    color: yellow;
+}
+
+.mørkere-farge{
+    color: #ffffff;
+}
 
 .fit{
     margin: 0;
     max-width: 99%;
     max-height: 99%;
+    color: yellow;
 }
 
 
 /* css fra https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_capitals  men vi har den i css i steden for html*/
 .mission {
-    background-color: #c03535;
+    background-color: #ff7272;
     color: #ffffff;
     border: 2px solid #000000;
     margin: 20px;
@@ -63,14 +77,14 @@ div{
 }
   
 .companys-about {
-    background-color: #c03535;
+    background-color: #ff7272;
     color: #ffffff;
     border: 2px solid #000000;
     margin: 20px;
     padding:20px;
 }
 .submit {
-    background-color: #c03535;
+    background-color: #ff7272;
     color: #ffffff;
     border: 2px solid #000000;
     margin: 20px;
