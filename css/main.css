@@ -1,17 +1,21 @@
 /*CSS fra https://arstechnica.com/gaming/2023/09/record-breaking-super-mario-bros-speedrun-approaches-robotic-perfection/*/
 
+#header {
+    background-color: var(--siteburgundy);
+    color:aliceblue;
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+   
+  }
+
 
 .nav{
     background-color: #caf1b8;
-    border: 2px solid #000000;
-    margin-top: 20px;
-    margin-bottom:20px;
-
 }
 
 body{
-    background-image: url("../image/bakgrunnsbilde.webp");
-    background-size: cover;
+    background-color: rgb(197, 233, 240);
+    
 }
 
 
@@ -52,18 +56,18 @@ div{
 }
 
 .employees{
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 
 .mørkere-farge{
-    color: #ffffff;
+    color: #000000;
 }
 
 .fit{
     margin: 0;
     max-width: 99%;
     max-height: 99%;
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -91,11 +95,72 @@ div{
     padding: 20px;
 }
 
-footer{
+#produkter{
     background-color: rgb(48, 167, 167);
     padding: 20px;
     border-radius: 0;
-    margin: 0;
+    margin-right: 720px;
+    margin-left:700px;
     text-align:center;
+    color:black; 
 }
 
+
+/** Hamburger menu ala Tengel **/
+
+#burger-toggle{display:none;} 
+
+@media (min-width: 701px){
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    right: 0;
+  }
+  
+
+  .menu li{padding-right: 4rem;}
+}
+
+@media (max-width: 700px){
+  .menu{
+    list-style-type: none;
+    position: sticky;
+    padding-left: 0px;
+    background-color: (113, 113, 207);
+  }
+  .logo {
+    display: none
+  }
+  
+  .menu-icon{
+    display: block;
+    background-image: url(../image/burgermenu1.svg);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hamburger-toggle-container {cursor: pointer;}
+
+  .menu li {
+    height: 0px;
+    overflow: hidden;
+  }
+
+  #burger-toggle:checked ~ .menu li{
+      height: 1rem;
+      width: auto;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      background-color: var(--siteburgundy);
+  }
+
+  nav{
+    display: flex;
+    height: 40px;
+
+  }
+}
